@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7AB47CBAF4FF7D05F6DDDC07 /* Pods_CheckListWithRealmTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BC78B079B7E8115AC512A8 /* Pods_CheckListWithRealmTests.framework */; };
+		C31A5C3484CF20A31AF0FA27 /* Pods_CheckListWithRealm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E77CA12AB80DC4ACF36CF3E /* Pods_CheckListWithRealm.framework */; };
 		C6DBD6B421FB16D000D1BB3A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6DBD6B321FB16D000D1BB3A /* AppDelegate.swift */; };
 		C6DBD6B621FB16D000D1BB3A /* CheckListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6DBD6B521FB16D000D1BB3A /* CheckListViewController.swift */; };
 		C6DBD6B921FB16D000D1BB3A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6DBD6B721FB16D000D1BB3A /* Main.storyboard */; };
@@ -14,6 +16,8 @@
 		C6DBD6BE21FB16D200D1BB3A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6DBD6BC21FB16D200D1BB3A /* LaunchScreen.storyboard */; };
 		C6DBD6C921FB16D200D1BB3A /* CheckListWithRealmTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6DBD6C821FB16D200D1BB3A /* CheckListWithRealmTests.swift */; };
 		C6DBD6D621FB1AF300D1BB3A /* CategoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6DBD6D521FB1AF300D1BB3A /* CategoryTableViewController.swift */; };
+		C6DBD6D821FB1F4400D1BB3A /* CheckListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6DBD6D721FB1F4400D1BB3A /* CheckListItem.swift */; };
+		C6DBD6DA21FB1F5F00D1BB3A /* CheckListCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6DBD6D921FB1F5F00D1BB3A /* CheckListCategory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +31,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		180651D5FF7CC7B86A6B9DD7 /* Pods-CheckListWithRealm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CheckListWithRealm.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CheckListWithRealm/Pods-CheckListWithRealm.debug.xcconfig"; sourceTree = "<group>"; };
+		21BC78B079B7E8115AC512A8 /* Pods_CheckListWithRealmTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CheckListWithRealmTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4CA66D8BEA812FA5DEE07E2D /* Pods-CheckListWithRealmTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CheckListWithRealmTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CheckListWithRealmTests/Pods-CheckListWithRealmTests.debug.xcconfig"; sourceTree = "<group>"; };
+		56CDDF09757FDB3155E9075F /* Pods-CheckListWithRealmTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CheckListWithRealmTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CheckListWithRealmTests/Pods-CheckListWithRealmTests.release.xcconfig"; sourceTree = "<group>"; };
+		9E77CA12AB80DC4ACF36CF3E /* Pods_CheckListWithRealm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CheckListWithRealm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6DBD6B021FB16D000D1BB3A /* CheckListWithRealm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CheckListWithRealm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6DBD6B321FB16D000D1BB3A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C6DBD6B521FB16D000D1BB3A /* CheckListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckListViewController.swift; sourceTree = "<group>"; };
@@ -38,6 +47,9 @@
 		C6DBD6C821FB16D200D1BB3A /* CheckListWithRealmTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckListWithRealmTests.swift; sourceTree = "<group>"; };
 		C6DBD6CA21FB16D200D1BB3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C6DBD6D521FB1AF300D1BB3A /* CategoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewController.swift; sourceTree = "<group>"; };
+		C6DBD6D721FB1F4400D1BB3A /* CheckListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckListItem.swift; sourceTree = "<group>"; };
+		C6DBD6D921FB1F5F00D1BB3A /* CheckListCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckListCategory.swift; sourceTree = "<group>"; };
+		DF72C8E164D42499F03A2D3A /* Pods-CheckListWithRealm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CheckListWithRealm.release.xcconfig"; path = "Pods/Target Support Files/Pods-CheckListWithRealm/Pods-CheckListWithRealm.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C31A5C3484CF20A31AF0FA27 /* Pods_CheckListWithRealm.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,18 +65,41 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7AB47CBAF4FF7D05F6DDDC07 /* Pods_CheckListWithRealmTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4CF521A1667385A799408C3F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				180651D5FF7CC7B86A6B9DD7 /* Pods-CheckListWithRealm.debug.xcconfig */,
+				DF72C8E164D42499F03A2D3A /* Pods-CheckListWithRealm.release.xcconfig */,
+				4CA66D8BEA812FA5DEE07E2D /* Pods-CheckListWithRealmTests.debug.xcconfig */,
+				56CDDF09757FDB3155E9075F /* Pods-CheckListWithRealmTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C28E2D91D56BAA9C97FEBAA5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9E77CA12AB80DC4ACF36CF3E /* Pods_CheckListWithRealm.framework */,
+				21BC78B079B7E8115AC512A8 /* Pods_CheckListWithRealmTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C6DBD6A721FB16D000D1BB3A = {
 			isa = PBXGroup;
 			children = (
 				C6DBD6B221FB16D000D1BB3A /* CheckListWithRealm */,
 				C6DBD6C721FB16D200D1BB3A /* CheckListWithRealmTests */,
 				C6DBD6B121FB16D000D1BB3A /* Products */,
+				4CF521A1667385A799408C3F /* Pods */,
+				C28E2D91D56BAA9C97FEBAA5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,8 +115,8 @@
 		C6DBD6B221FB16D000D1BB3A /* CheckListWithRealm */ = {
 			isa = PBXGroup;
 			children = (
-				C6DBD6D421FB19D400D1BB3A /* Controllers */,
 				C6DBD6D321FB19BE00D1BB3A /* Models */,
+				C6DBD6D421FB19D400D1BB3A /* Controllers */,
 				C6DBD6B321FB16D000D1BB3A /* AppDelegate.swift */,
 				C6DBD6B721FB16D000D1BB3A /* Main.storyboard */,
 				C6DBD6BA21FB16D200D1BB3A /* Assets.xcassets */,
@@ -102,6 +138,8 @@
 		C6DBD6D321FB19BE00D1BB3A /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				C6DBD6D721FB1F4400D1BB3A /* CheckListItem.swift */,
+				C6DBD6D921FB1F5F00D1BB3A /* CheckListCategory.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -109,8 +147,8 @@
 		C6DBD6D421FB19D400D1BB3A /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				C6DBD6B521FB16D000D1BB3A /* CheckListViewController.swift */,
 				C6DBD6D521FB1AF300D1BB3A /* CategoryTableViewController.swift */,
+				C6DBD6B521FB16D000D1BB3A /* CheckListViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -122,9 +160,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C6DBD6CD21FB16D200D1BB3A /* Build configuration list for PBXNativeTarget "CheckListWithRealm" */;
 			buildPhases = (
+				AE8631CF8A7CBC2034E273A4 /* [CP] Check Pods Manifest.lock */,
 				C6DBD6AC21FB16D000D1BB3A /* Sources */,
 				C6DBD6AD21FB16D000D1BB3A /* Frameworks */,
 				C6DBD6AE21FB16D000D1BB3A /* Resources */,
+				BD03348AEC928BBEE30501E6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -139,6 +179,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C6DBD6D021FB16D200D1BB3A /* Build configuration list for PBXNativeTarget "CheckListWithRealmTests" */;
 			buildPhases = (
+				C7631D39759DB946D28ECAF6 /* [CP] Check Pods Manifest.lock */,
 				C6DBD6C021FB16D200D1BB3A /* Sources */,
 				C6DBD6C121FB16D200D1BB3A /* Frameworks */,
 				C6DBD6C221FB16D200D1BB3A /* Resources */,
@@ -211,6 +252,77 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		AE8631CF8A7CBC2034E273A4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CheckListWithRealm-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BD03348AEC928BBEE30501E6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-CheckListWithRealm/Pods-CheckListWithRealm-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CheckListWithRealm/Pods-CheckListWithRealm-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C7631D39759DB946D28ECAF6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CheckListWithRealmTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C6DBD6AC21FB16D000D1BB3A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -219,6 +331,8 @@
 				C6DBD6B621FB16D000D1BB3A /* CheckListViewController.swift in Sources */,
 				C6DBD6B421FB16D000D1BB3A /* AppDelegate.swift in Sources */,
 				C6DBD6D621FB1AF300D1BB3A /* CategoryTableViewController.swift in Sources */,
+				C6DBD6DA21FB1F5F00D1BB3A /* CheckListCategory.swift in Sources */,
+				C6DBD6D821FB1F4400D1BB3A /* CheckListItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,6 +492,7 @@
 		};
 		C6DBD6CE21FB16D200D1BB3A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 180651D5FF7CC7B86A6B9DD7 /* Pods-CheckListWithRealm.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -396,6 +511,7 @@
 		};
 		C6DBD6CF21FB16D200D1BB3A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF72C8E164D42499F03A2D3A /* Pods-CheckListWithRealm.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -414,6 +530,7 @@
 		};
 		C6DBD6D121FB16D200D1BB3A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4CA66D8BEA812FA5DEE07E2D /* Pods-CheckListWithRealmTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -435,6 +552,7 @@
 		};
 		C6DBD6D221FB16D200D1BB3A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 56CDDF09757FDB3155E9075F /* Pods-CheckListWithRealmTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";

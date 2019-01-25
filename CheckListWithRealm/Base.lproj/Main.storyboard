@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CategoryCell" id="Qpq-LN-t7t">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CheckListCategoryCell" id="Qpq-LN-t7t">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Qpq-LN-t7t" id="bKC-6P-IIa">
@@ -32,7 +32,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="f0A-II-Wsg">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="l2d-Bg-nir"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="l2d-Bg-nir">
+                            <connections>
+                                <action selector="addANewCategory" destination="VpZ-MW-wep" id="XHX-3U-nTB"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <segue destination="OId-cn-dhk" kind="show" identifier="CheckListsSegue" id="CkU-ob-DBP"/>
@@ -66,7 +70,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="k8Z-dm-exJ">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="T5Y-f7-1O8"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="T5Y-f7-1O8">
+                            <connections>
+                                <action selector="addATaskToDo" destination="OId-cn-dhk" id="mzu-nS-1vh"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P3f-HR-lDR" userLabel="First Responder" sceneMemberID="firstResponder"/>
