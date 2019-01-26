@@ -26,14 +26,14 @@ class CheckListViewController: UITableViewController {
 
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return toDoItemsArray?.count ?? 1
+        return (toDoItemsArray?.count == 0) ? 1 : toDoItemsArray!.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "CheckListItemCell", for: indexPath)
         
-        if let item = toDoItemsArray?[indexPath.row] {
+        if toDoItemsArray!.count > 0, let item = toDoItemsArray?[indexPath.row] {
             cell.textLabel?.text = item.title
             cell.accessoryType = item.done ? .checkmark : .none
         }else{
@@ -45,28 +45,34 @@ class CheckListViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        
         if let item = toDoItemsArray?[indexPath.row] {
-            
             do {
-                
                 try realm.write {
                     item.done = !item.done
-                    tableView.cellForRow(at: indexPath)?.accessoryType = item.done ? .checkmark : .none
                 }
             }catch {
                 print("Error")
             }
         }
+        
+        tableView.reloadData()
     }
     
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         
-        if let item = toDoItemsArray?[indexPath.row] {
-            try! realm.write {
-                realm.delete(item)
-            }
+        guard let item = toDoItemsArray?[indexPath.row] else {
+            return
         }
         
+        do {
+            try realm.write {
+                realm.delete(item)
+            }
+        }catch {
+            print("Error in deleting")
+        }
+
         loadItems()
         
     }
@@ -79,21 +85,18 @@ class CheckListViewController: UITableViewController {
             
             let newItem = CheckListItem()
             
-            if let textField = alertController.textFields?.first {
-                newItem.title = textField.text ?? ""
-            }
-            newItem.done = false
-            if let parentCategory = self.parentCategory {
-                
+            if let parentCategory = self.parentCategory,  let textField = alertController.textFields?.first{
                 do {
                     try self.realm.write {
+                        newItem.title = textField.text ?? ""
+                        newItem.done = false
+                        newItem.dateCreated = Date()
                         parentCategory.items.append(newItem)
                     }
                     
                 }catch {
                     print("Error in save new task: \(error)")
                 }
-
             }
             
             self.loadItems()
@@ -116,7 +119,7 @@ class CheckListViewController: UITableViewController {
     
     
     func getData() {
-        toDoItemsArray = realm.objects(CheckListItem.self)
+        toDoItemsArray = parentCategory?.items.sorted(byKeyPath: "dateCreated", ascending: true)
     }
     
 }

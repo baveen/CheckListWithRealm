@@ -22,15 +22,15 @@ class CategoryTableViewController: UITableViewController {
     // MARK: - Table view data source
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return categoryArray?.count ?? 1
+        return (categoryArray?.count == 0) ? 1 : categoryArray!.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
        
         let cell = tableView.dequeueReusableCell(withIdentifier: "CheckListCategoryCell", for: indexPath)
         
-        if let item = categoryArray?[indexPath.row] {
-            cell.textLabel?.text = item.name
+        if categoryArray!.count > 0, let item =  categoryArray?[indexPath.row] {
+             cell.textLabel?.text = item.name
         }else{
             cell.textLabel?.text = "No List Created Yet"
         }
@@ -39,9 +39,29 @@ class CategoryTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        performSegue(withIdentifier: "CheckListsSegue", sender: self)
+        if categoryArray!.count > 0 {
+            performSegue(withIdentifier: "CheckListsSegue", sender: self)
+        }else {
+            tableView.deselectRow(at: indexPath, animated: true)
+        }
     }
     
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        
+        guard let item = categoryArray?[indexPath.row] else {
+            return
+        }
+        do {
+            try realm.write {
+                realm.delete(item)
+            }
+        }catch {
+            print("Error in deleting")
+        }
+        
+        loadCategories()
+        
+    }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let destinationVc = segue.destination as! CheckListViewController
